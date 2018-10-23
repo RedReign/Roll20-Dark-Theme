@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @run-at        document-start
 // @version       2018.10.22.2
-// @license       MIT
+// @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css = [
 	"body {",
