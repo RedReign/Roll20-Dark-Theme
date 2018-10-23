@@ -2,6 +2,14 @@
 Dark theme for Roll20. Fully compatible with the base editor as well as the 5e Shaped and OGL sheets.
 Also compatible with the Roll20 Enhancement Suite extension!
 
+## Installation:
+- Install the [Tampermonkey](https://tampermonkey.net/) extension on your browser.
+
+  (Greasemonkey and other userscript extensions may work, but are not currently supported.)
+- 
+
+- Enjoy!
+
 ## Acknowledgements
 **Thanks to:**
 
