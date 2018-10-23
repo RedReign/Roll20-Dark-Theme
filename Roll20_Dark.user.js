@@ -5,7 +5,7 @@
 // @author        RedReign
 // @include       https://app.roll20.net/editor*
 // @run-at        document-start
-// @version       2018.10.22.2
+// @version       2018.10.23.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css = [
