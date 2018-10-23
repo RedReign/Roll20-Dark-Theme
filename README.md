@@ -6,7 +6,7 @@ Also compatible with the Roll20 Enhancement Suite extension!
 - Install the [Tampermonkey](https://tampermonkey.net/) extension on your browser.
 
   (Greasemonkey and other userscript extensions may work, but are not currently supported.)
-- 
+- [Download and open the userscript in your browser](https://openuserjs.org/install/RedReign/Roll20_Dark.user.js).
 
 - Enjoy!
 
