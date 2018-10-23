@@ -11,5 +11,5 @@ All the folks of the 5etools community for their input and QA testing!
 
 And several other friends who listened to me for many hours as I grumbled about CSS on discord. You know who you are.
 
-# License
+## License
 The source code is licensed under GPL-3.0.
