@@ -5,7 +5,7 @@
 // @author        RedReign
 // @include       https://app.roll20.net/editor*
 // @run-at        document-start
-// @version       2018.10.25.1
+// @version       2018.10.27.2
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -280,7 +280,8 @@ textarea,select,input,table,
 .ui-dialog .btn:not(.sheet-wrapper-button):hover,
 #textchat-input .btn:hover,
 #rightsidebar .btn:hover,
-.tokenactions .btn:hover {
+.tokenactions .btn:hover,
+.r20es-dialog .btn:hover {
 	background-color:hsl(0,0%,20%)!important;
 	color:hsl(0,0%,100%)!important;
 }
@@ -509,9 +510,10 @@ textarea {
 	background-color: transparent;
 	border-bottom: 2px solid hsl(44,63%,63%) !important;
 }
+
 .sheet-spell-level input {
-	background-color:hsl(300,100%,50%) !important;
-	color:hsl(300,100%,50%) !important;
+	background-color:hsl(0,0%,10%) !important;
+	color:hsl(0,0%,80%) !important;
 }
 
 .sheet-spell-level .sheet-expended {
@@ -646,7 +648,7 @@ textarea {
 }
 
 .sheet-action sheet-compendium-drop-target ui-droppable {
-	color:hsl(300,100%,50%);
+	color:hsl(0,0%,80%);
 }
 
 .charsheet .sheet-attacks .sheet-options-flag:checked + span,
@@ -808,8 +810,10 @@ input[name=\attr_cp\] {
 //}
 
 .ui-dialog-buttonset button[type='button'],
-.ui-dialog-buttonset > button {
+.ui-dialog-buttonset > button,
+.r20es-dialog .btn {
 background-color: #1a1a1a !important;
+color: hsl(0,0%,80%) !important;
 border: 1px solid black !important;
 line-height: 18px;
 border-radius: 4px !important;
@@ -836,6 +840,7 @@ background-color: #444 !important;
 color: hsl(0,0%,0%) !important;
 }
 
+.tools-list .tool-row:nth-child(2n+1),
 table.config-table tbody tr:nth-child(2n+1) {
 background-color: hsl(0,0%,20%) !important;
 }
@@ -912,10 +917,6 @@ box-shadow: 0 3px 3px #222 !important;
 	background-color: hsl(0,0%,10%) !important;
 }
 
-.handouteditor .dropbox {
-background-color: #111 !important;
-}
-
 .note-editor.note-frame .note-editing-area .note-editable {
 color: inherit !important;
 }
@@ -925,6 +926,7 @@ background-color: #2a2a2a !important;
 border-color: #111 !important;
 }
 
+.handouteditor .dropbox,
 .note-statusbar > .note-resizebar {
 background-color: #111 !important;
 }
@@ -963,10 +965,12 @@ background-image: none !important;
 border: 1px solid #aaaaaa !important;
 }
 
+.charactereditor .avatar,
 .artr__side {
     background-color: #1a1a1a !important;
 }
 
+.artr__item,
 .artr__item__top,
 .artr__item__bottom {
     background-color:#222 !important;
@@ -988,6 +992,7 @@ color: hsl(0,0%,80%) !important
 }
 
 .charsheet .sheet-pseudo-button-wrapper > span {
+color: hsl(0,0%,90%) !important;
 background-color: #444 !important;
 }
 
@@ -1058,8 +1063,9 @@ background-color: #444 !important
 background-color: #591209 !important;
 }
 
-.charsheet .sheet-spells input[type='checkbox'] + span{
+.charsheet .sheet-spells input[type='checkbox'] + span {
 background-color: #444 !important;
+z-index: 999 !important
 }
 
 .charsheet .sheet-bubble {
@@ -1249,44 +1255,40 @@ background-color: #1a1a1a !important;
 
 .charsheet .sheet-indented-box-expand-left, .charsheet .sheet-indented-box-expand-right, .charsheet .sheet-box-middle,
 .sheet-rolltemplate-5e-shaped .sheet-box-middle {
-background-color: #1a1a1a !important;
+    background-color: #1a1a1a !important;
 }
 
 .sheet-inspiration-left, .sheet-inspiration-right, .sheet-proficiency-bonus button, .sheet-shaped-version > button {
-background-color: transparent !important;
-}
-.sheet-shaped-version > button > span {
-text-shadow: 1px 1px #1a1a1a;
+    background-color: transparent !important;
 }
 
-//
-//
-//
-// OGL TIME HERE WE GO
-//
-//
-//
+.sheet-shaped-version > button > span {
+    text-shadow: 1px 1px #1a1a1a;
+}
+
+/* OGL TIME LET'S GO */
+
 div.sheet-licensecontainer div.sheet-page.sheet-core > div.sheet-header,
 div.sheet-licensecontainer div.sheet-page.sheet-bio > div.sheet-header,
 div.sheet-licensecontainer div.sheet-page.sheet-spells > div.sheet-header,
 div.sheet-licensecontainer div.sheet-page.sheet-options > div.sheet-header {
-background: url('https://i.imgur.com/ZgqX8uA.png') top left round !important;
+    background: url('https://i.imgur.com/XBQ3YIH.png') top left round !important;
 }
 
 .sheet-rolltemplate-spell .sheet-container,
 .sheet-rolltemplate-npc, .sheet-rolltemplate-npcaction .sheet-container, .sheet-rolltemplate-npcatk, .sheet-rolltemplate-npcdmg, .sheet-rolltemplate-traits {
-background: #222 url('https://i.imgur.com/n7ohb4t.png') repeat scroll left top !important;
+    background: #222 url('https://i.imgur.com/n7ohb4t.png') repeat scroll left top !important;
 }
 
 div.sheet-rolltemplate-simple div.sheet-container {
-background: url('https://i.imgur.com/3kpSjGA.png') top left round !important;
+    background: url('https://i.imgur.com/3kpSjGA.png') top left round !important;
 }
 
 div.sheet-rolltemplate-atk div.sheet-desc.sheet-info .sheet-middle,
 div.sheet-rolltemplate-atkdmg div.sheet-desc.sheet-info .sheet-middle,
 div.sheet-rolltemplate-dmg div.sheet-desc.sheet-info .sheet-middle,
 div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-middle {
-background: url('https://i.imgur.com/Go3pzMs.png') top left round !important;
+    background: url('https://i.imgur.com/Go3pzMs.png') top left round !important;
 }
 
 div.sheet-rolltemplate-atk div.sheet-desc.sheet-info .sheet-top,
@@ -1330,10 +1332,6 @@ background-color: #1a1a1a !important;
 color: #111 !important;
 }
 
-.charsheet .sheet-coin {
-    background-color: #2a2a2a;
-}
-
 .sheet-trait:hover,
 .sheet-item input,
 .sheet-display > .sheet-title,
@@ -1350,6 +1348,10 @@ color: #111 !important;
 
 .ui-dialog .btn[name='roll_spell'] {
     border-color: transparent !important
+}
+
+.repitem .sheet-spell > .sheet-options-flag[type='checkbox'] + span {
+    background-color: transparent !important;
 }
 
 .charsheet input[type='radio'].sheet-tab-button + span,
@@ -1371,6 +1373,12 @@ div.sheet-rolltemplate-dmg div.sheet-container, div.sheet-rolltemplate-atkdmg di
 
 .charsheet .sheet-level::after {
     border-left: 20px solid #2a2a2a !important;
+}
+
+.r20es-dialog,
+.r20es-dialog div {
+    background-color: hsl(0,0%,10%) !important;
+    color: hsl(0,0%,80%) !important;
 }
 `;
 if (typeof GM_addStyle != "undefined") {
