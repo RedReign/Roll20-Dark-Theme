@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2018.11.23.2
+// @version       2018.11.23.3
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -1496,6 +1496,14 @@ div.sheet-licensecontainer .sheet-trait:hover > .sheet-display > span.sheet-titl
     background: #222 url('https://i.imgur.com/n7ohb4t.png') repeat scroll left top !important;
 }
 
+.sheet-rolltemplate-spell .sheet-container span {
+    color: hsl(0,0%,80%) !important;
+}
+
+.sheet-display button.sheet-spellcard .sheet-innate {
+    background-color: transparent !important;
+}
+
 .charsheet .sheet-spell input[type='checkbox']:checked ~ span.sheet-prep {
 background-color: hsl(44,63%,63%) !important
 }
@@ -1560,6 +1568,11 @@ div.sheet-licensecontainer .sheet-resources .sheet-subcontainer .sheet-label[nam
 
 .repitem .sheet-spell > .sheet-options-flag[type='checkbox'] {
     z-index: 11 !important;
+}
+
+.repitem .itemcontrol,
+.sheet-spell-container .repitem .itemcontrol .btn {
+    z-index: 12 !important;
 }
 
 .charsheet input[type='radio'].sheet-tab-button + span,
