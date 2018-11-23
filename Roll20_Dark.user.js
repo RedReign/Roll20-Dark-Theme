@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2018.11.23.1
+// @version       2018.11.23.2
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -464,11 +464,19 @@ li.ui-tabs-active.ui-state-active > a {
 .charsheet .sheet-red,
 .charsheet .sheet-npc .sheet-display .sheet-red input,
 .charsheet .sheet-npc .sheet-display .sheet-red span {
-	color:hsl(0,0%,100%) !important;
+	color:hsl(0,0%,80%) !important;
 }
 
-.sheet-display .sheet-row > span:nth-child(1) {
-	color:hsl(0,100%,50%) !important;
+.sheet-display .sheet-row.sheet-subtitle span {
+	color: hsl(0,100%,30%) !important;
+}
+
+ {
+    color: hsl(44,63%,63%) !important;
+}
+.sheet-npc .sheet-display > button span[name*="attr_"] {
+    color: hsl(0,0%,80%) !important;
+    background-color: transparent !important;
 }
 
 [name=\attr_name_display\]  {
@@ -477,7 +485,7 @@ li.ui-tabs-active.ui-state-active > a {
 }
 
 .charsheet .sheet-options .sheet-row > span, [name=\attr_name\] {
-	color:hsl(0,0%,100%) !important;
+	color:hsl(0,0%,80%) !important;
 }
 
 [name=\attr_desc\]  {
@@ -587,9 +595,12 @@ textarea {
 }
 
 .sheet-desc span.inlinerollresult {
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
+//	padding-top: 5px !important;
+//	padding-bottom: 5px !important;
+    line-height: 1.5em !important;
 }
+
+color: #a11504 !important;
 
 .sheet-savedc span.inlinerollresult {
 	padding: 4px !important;
@@ -1286,6 +1297,14 @@ background-color: #1a1a1a !important;
 }
 
 /* OGL TIME LET'S GO */
+
+div.sheet-licensecontainer .sheet-container .sheet-body button.btn.ui-draggable {
+    color: hsl(44,63%,63%) !important;
+}
+
+div.sheet-licensecontainer .sheet-container .sheet-body button.btn.ui-draggable:hover {
+    color: #3f88e6 !important;
+}
 
 div.sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-subcontainer .sheet-row-container input[type="checkbox"]:checked {
     background-color: #444 !important;
