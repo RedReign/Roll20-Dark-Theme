@@ -15,7 +15,7 @@ Also compatible with the Roll20 Enhancement Suite extension!
 
 [SSStormy](https://github.com/SSStormy/) and [TheGiddyLimit](https://github.com/TheGiddyLimit/) for their encouragement, guidance, and endless wisdom.
 
-All the folks of the 5etools community for their input and QA testing!
+All the folks of the 5etools community and the VTTES community for their input and QA testing!
 
 And several other friends who listened to me for many hours as I grumbled about CSS on discord. You know who you are.
 
