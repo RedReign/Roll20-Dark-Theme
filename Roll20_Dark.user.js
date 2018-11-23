@@ -4,8 +4,9 @@
 // @description	  A dark theme for Roll20.net.
 // @author        RedReign
 // @include       https://app.roll20.net/editor*
+// @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2018.11.13.3
+// @version       2018.11.23.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -267,10 +268,15 @@ textarea,select,input,table,
 .ui-dialog .btn:not(.sheet-wrapper-button),
 #textchat-input .btn,
 #rightsidebar .btn,
-.tokenactions .btn {
+.tokenactions .btn,
+.ui-dialog-content .ui-dialog-buttonset > button {
 	 background-color:hsl(0,0%,10%)!important;
 	 color:hsl(0,0%,75%)!important;
 	 border-color:black!important;
+}
+
+.ui-dialog-buttonset button {
+    background-image: none !important;
 }
 
 .sheet-body .ui-dialog-buttonset button[type='button']:hover,
@@ -278,7 +284,8 @@ textarea,select,input,table,
 #textchat-input .btn:hover,
 #rightsidebar .btn:hover,
 .tokenactions .btn:hover,
-.r20es-dialog .btn:hover {
+.r20es-dialog .btn:hover,
+.ui-dialog-buttonset button:hover {
 	background-color:hsl(0,0%,20%)!important;
 	color:hsl(0,0%,100%)!important;
 }
@@ -664,17 +671,12 @@ textarea {
 .charsheet .sheet-npc .sheet-npc_options-flag:checked + span,
 .charsheet .sheet-trait .sheet-options-flag:checked + span,
 .charsheet .sheet-action .sheet-options-flag:checked + span,
-.charsheet .sheet-equipment .sheet-inventorysubflag:checked + span {
-	color:hsl(44,63%,63%) !important;
-}
-
-.charsheet .sheet-attacks .sheet-options-flag + span,
-.charsheet .sheet-spell .sheet-options-flag + span,
-.charsheet .sheet-tool .sheet-options-flag + span,
-.charsheet .sheet-npc .sheet-npc_options-flag + span,
-.charsheet .sheet-trait .sheet-options-flag + span,
-.charsheet .sheet-action .sheet-options-flag + span,
-.charsheet .sheet-equipment .sheet-inventorysubflag + span {
+.charsheet .sheet-equipment .sheet-inventorysubflag:checked + span,
+.charsheet .sheet-core .sheet-textbox .sheet-options-flag:checked + span,
+.charsheet .sheet-core .sheet-complex .sheet-options-flag:checked + span,
+.charsheet .sheet-core .sheet-header .sheet-options-flag:checked + span,
+.sheet-rolltemplate-5e-shaped a[href^='!'],
+.sheet-rolltemplate-5e-shaped a[href^='~'] {
 	color:hsl(44,63%,63%) !important;
 }
 
@@ -801,6 +803,13 @@ padding: 4px 10px 4px !important;
 box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05) !important;
 }
 
+.ui-dialog .btn:not(.sheet-wrapper-button):hover,
+.ui-dialog-buttonset button[type='button']:hover,
+.ui-dialog-buttonset > button:hover {
+    background-color: hsl(0,0%,20%) !important;
+    color: white !important;
+}
+
 li.handout.compendium-item .namecontainer {
 box-shadow: none !important;
 }
@@ -861,7 +870,13 @@ position: static !important;
 	background-color:hsl(20,25%,15%)!important;
 }
 
-#textchat .message.private {
+#textchat .message.private,
+.charsheet .sheet-gm-info-block,
+.charsheet .sheet-gm-info-flex,
+.charsheet .sheet-gm-info-inline-block,
+.sheet-rolltemplate-5e-shaped .sheet-gm-info-block,
+.sheet-rolltemplate-5e-shaped .sheet-gm-info-flex,
+.sheet-rolltemplate-5e-shaped .sheet-gm-info-inline-block {
 	background-color:hsl(58,25%,15%)!important;
 }
 
@@ -963,12 +978,23 @@ border: 1px solid #aaaaaa !important;
     background-color:#222 !important;
 }
 
+.artr__side__tag_header,
+.artr__side__head,
+.artr__search {
+    border-bottom: 1px solid hsl(0,0%,40%) !important;
+}
+
 .artr__side__tag[data-state="1"] {
 	background-image: linear-gradient(#2a2a2a, #337ab7) !important;
 }
 
 .artr__side__tag[data-state="2"] {
 	background-image: linear-gradient(#2a2a2a, #8a1a1b) !important;
+}
+
+.artr__main .artr__view_inner,
+.artr__main .artr__view {
+background-color: hsl(0,0%,10%) !important;
 }
 
 .charsheet {
@@ -1260,6 +1286,10 @@ background-color: #1a1a1a !important;
 }
 
 /* OGL TIME LET'S GO */
+
+div.sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-subcontainer .sheet-row-container input[type="checkbox"]:checked {
+    background-color: #444 !important;
+}
 
 div.sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-core .sheet-col2 {
 	background: url("https://gistcdn.githack.com/RedReign/70800980c89d9a8ed2029f0136ae75f0/raw/a608c0a7f952138d35717dea053529d800f2201d/vitals.svg") !important;
@@ -1571,6 +1601,11 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
 
 .r20es-clickable-text.selected {
 	background-color: hsl(0,0%,20%) !important;
+}
+
+.r20es-welcome {
+    background-color: hsl(0,0%,10%) !important;
+    color: hsl(0,0%,75%) !important;
 }
 `;
 if (typeof GM_addStyle != "undefined") {
