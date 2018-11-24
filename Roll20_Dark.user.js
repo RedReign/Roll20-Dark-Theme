@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2018.11.23.3
+// @version       2018.11.24.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -105,6 +105,17 @@ background-color: #282150 !important;
 
 #editor-wrapper {
 	overflow: scroll !important; /// CHANGE HIDDEN TO SCROLL FOR SCROLLBARS
+}
+
+.btn.btn-danger {
+    background-color: #660000 !important;
+}
+
+.btn.btn-danger:hover,
+.ui-dialog div.sheet-licensecontainer .sheet-body button.btn.btn-danger:hover,
+.charsheet .repitem .itemcontrol button.btn.btn-danger:hover {
+    color: white !important;
+    background-color: #880000 !important;
 }
 
 .ui-widget-content {
@@ -1544,6 +1555,10 @@ div.sheet-licensecontainer .sheet-resources .sheet-subcontainer .sheet-label[nam
     background-color: #2a2a2a !important;
 }
 
+div.sheet-licensecontainer .sheet-npc_options span {
+    color: hsl(0,0%,70%) !important;
+}
+
 .sheet-trait:hover,
 .sheet-item input,
 .sheet-display > .sheet-title,
@@ -1561,13 +1576,20 @@ div.sheet-licensecontainer .sheet-resources .sheet-subcontainer .sheet-label[nam
     border-color: transparent !important
 }
 
-.repitem .sheet-spell > .sheet-options-flag[type='checkbox'] + span {
+.repitem .sheet-spell > .sheet-options-flag[type='checkbox'] + span,
+.charsheet .sheet-npc .sheet-npc_options-flag + span {
     background-color: transparent !important;
     z-index: 10 !important;
 }
 
-.repitem .sheet-spell > .sheet-options-flag[type='checkbox'] {
+.repitem .sheet-spell > .sheet-options-flag[type='checkbox'],
+.charsheet .sheet-npc .sheet-npc_options-flag {
     z-index: 11 !important;
+}
+
+.charsheet .sheet-npc .sheet-npc_options-flag,
+.charsheet .sheet-npc .sheet-npc_options-flag + span {
+    top: 10px !important;
 }
 
 .repitem .itemcontrol,
