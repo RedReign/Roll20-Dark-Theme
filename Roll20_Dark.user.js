@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2018.11.24.1
+// @version       2018.12.11.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -968,6 +968,10 @@ border: 1px solid #000 !important;
 background-color: #1a1a1a !important;
 }
 
+.folderroot .dd-content {
+	border-top: 1px solid hsl(0,0%,30%) !important;
+}
+
 img[src='/images/handout.png'] {
 	content: url('https://i.imgur.com/zM79lGs.png')!important;
 }
@@ -1002,8 +1006,10 @@ border: 1px solid #aaaaaa !important;
 
 .artr__side__tag_header,
 .artr__side__head,
+.artr__side__tag_grid,
 .artr__search {
-    border-bottom: 1px solid hsl(0,0%,40%) !important;
+    background-color:hsl(0,0%,10%) !important;
+    border-bottom: 1px solid black !important;
 }
 
 .artr__side__tag[data-state="1"] {
