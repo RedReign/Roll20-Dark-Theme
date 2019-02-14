@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2018.12.11.1
+// @version       2019.2.14.2
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -48,6 +48,10 @@ body {
 	padding-right: 20px !important;
 }
 
+#editinglayer li.gm_slider_box {
+    background-color: #333 !important;
+}
+
 #floatingtoolbar li.activebutton,
 #floatingtoolbar li:hover
 #floatingtoolbar div.submenu ul li:hover,
@@ -65,7 +69,7 @@ body {
 #floatinglayerbar.weather li.chooseweather,
 #floatinglayerbar.foreground li.chooseforeground,
 #measure li.activerulermode {
-background-color: #282150 !important;
+    background-color: #282150 !important;
 }
 
 #floatingtoolbar div.submenu ul li span {
@@ -1254,7 +1258,10 @@ background: url('http://imgsrv.roll20.net/?src=gistcdn.githack.com/RedReign/fab3
 
 .charsheet .sheet-boring-box-expand-bottom, .charsheet .sheet-boring-box-expand-top,
 .sheet-rolltemplate-5e-shaped .sheet-boring-box-expand-bottom, .sheet-rolltemplate-5e-shaped .sheet-boring-box-expand-top {
-background: #1a1a1a url('http://imgsrv.roll20.net/?src=gistcdn.githack.com/RedReign/a63fee182682ed9f41a8e35954cbd35f/raw/cdb0c1a5947549633aa106df9015b9a50e488698/boringBoxTopBottomExpandWhite.svg') repeat-x !important;
+    background: #1a1a1a url('http://imgsrv.roll20.net/?src=gistcdn.githack.com/RedReign/a63fee182682ed9f41a8e35954cbd35f/raw/cdb0c1a5947549633aa106df9015b9a50e488698/boringBoxTopBottomExpandWhite.svg') repeat-x !important;
+}
+.sheet-rolltemplate-5e-shaped .sheet-boring-box-expand-bottom {
+    transform: scaleY(-1) scaleX(1.05) !important;
 }
 
 .charsheet .sheet-boring-box-expand-left, .charsheet .sheet-boring-box-expand-right,
@@ -1314,6 +1321,12 @@ background-color: #1a1a1a !important;
 }
 
 /* OGL TIME LET'S GO */
+
+div.sheet-licensecontainer .sheet-npc_toggle[value="1"] ~ .sheet-npc .sheet-stat-block,
+div.sheet-licensecontainer .sheet-npc_toggle[value="1"] ~ .sheet-npc .sheet-actions,
+div.sheet-licensecontainer .sheet-npc_toggle[value="1"] + .sheet-npcspellcastingflag[value="1"] ~ .sheet-pc .sheet-page.sheet-spells .sheet-body .sheet-col {
+    background: transparent !important;
+}
 
 div.sheet-licensecontainer .sheet-container .sheet-body button.btn.ui-draggable {
     color: hsl(44,63%,63%) !important;
