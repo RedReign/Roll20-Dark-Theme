@@ -1675,16 +1675,23 @@ if (typeof GM_addStyle != "undefined") {
 } else if (typeof addStyle != "undefined") {
 	addStyle(css);
 } else {
-	var node = document.createElement("style");
+
+    const node = document.createElement("style");
 	node.type = "text/css";
-	node.innerText = css;
-	var heads = document.getElementsByTagName("head");
-	if (heads.length > 0) {
-		heads[0].appendChild(node);
-	} else {
-		// no head yet, stick it whereever
-		document.documentElement.appendChild(node);
-	}
+	node.innerHTML = css;
+
+    // Note(stormy): wait for document.head to be available
+    const interval = 10;
+    const waitForDepts = () => {
+        if(!document.head) {
+            setTimeout(waitForDepts, 10);
+            return;
+        }
+
+        document.head.appendChild(node);
+
+    }
+    setTimeout(waitForDepts, 10);
 }
 })();
 (function(){
