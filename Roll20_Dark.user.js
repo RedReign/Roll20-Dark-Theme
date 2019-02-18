@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2019.2.14.2
+// @version       2019.2.18.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -79,6 +79,20 @@ body {
 #floatingtoolbar li, #floatinglayerbar li {
 	border: 0 !important;
 	color:hsl(0,0%,80%) !important;
+}
+
+#ttaudio_results .result,
+#battlebards_results .result,
+#incompetech_results .result,
+#jukebox_results .result,
+#fanburst_results .result,
+#myaudio_results .result,
+.listresults .result {
+    background-color: #1a1a1a !important;
+}
+
+#jukeboxfolderroot div.title:hover {
+    background-color: transparent !important;
 }
 
 #floatingtoolbar li.activebutton,
@@ -1578,12 +1592,18 @@ div.sheet-licensecontainer .sheet-npc_options span {
     color: hsl(0,0%,70%) !important;
 }
 
+.charsheet .sheet-attacks .sheet-display .sheet-subheader span {
+    background-color:transparent !important;
+}
+
 .sheet-trait:hover,
 .sheet-item input,
 .sheet-display > .sheet-title,
 .sheet-display > button span[name*='attr_'],
 .sheet-display > button input[name*='attr_'],
-.charsheet .sheet-coin {
+.charsheet .sheet-coin,
+.charsheet div.sheet-globaldisplay,
+.charsheet .sheet-pc .sheet-global-mod .sheet-options-flag:not(:checked) ~ .sheet-display .sheet-subheader {
 	background-color: #2a2a2a !important;
 }
 
