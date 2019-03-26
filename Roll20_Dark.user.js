@@ -10,6 +10,16 @@
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
+.button-2{
+	background-color: hsl(0,0%,10%) !important;
+}
+.button-1{
+	background-color: hsl(0,0%,10%) !important;
+}
+#color_selector{
+	background-color:hsl(0,0%,10%) !important;
+    border: 1px solid hsl(250,25%,15%) !important;
+}
 body {
     background:url(http://subtlepatterns.com/patterns/dark_leather.png)!important;
 }
