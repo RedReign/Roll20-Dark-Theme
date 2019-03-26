@@ -6,20 +6,23 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2019.2.18.1
+// @version       2019.3.26.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
 .button-2{
 	background-color: hsl(0,0%,10%) !important;
 }
+
 .button-1{
 	background-color: hsl(0,0%,10%) !important;
 }
+
 #color_selector{
 	background-color:hsl(0,0%,10%) !important;
     border: 1px solid hsl(250,25%,15%) !important;
 }
+
 body {
     background:url(http://subtlepatterns.com/patterns/dark_leather.png)!important;
 }
@@ -54,8 +57,16 @@ body {
 
 #floatingtoolbar div.submenu ul li {
 	color:hsl(0,0%,80%) !important;
-	padding-left: 45px !important;
 	padding-right: 20px !important;
+    padding-left: 45px !important;
+}
+
+#floatingtoolbar div.submenu ul li span {
+	padding-left: 10px !important;
+}
+
+#floatingtoolbar div.submenu ul li img {
+    margin-left: -20px !important;
 }
 
 #editinglayer li.gm_slider_box {
@@ -80,10 +91,6 @@ body {
 #floatinglayerbar.foreground li.chooseforeground,
 #measure li.activerulermode {
     background-color: #282150 !important;
-}
-
-#floatingtoolbar div.submenu ul li span {
-	padding: 0 !important;
 }
 
 #floatingtoolbar li, #floatinglayerbar li {
