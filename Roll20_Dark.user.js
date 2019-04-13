@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2019.3.26.1
+// @version       2019.4.13.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -1025,7 +1025,28 @@ background-image: none !important;
 }
 
 .textboxlist-bit-editable {
-border: 1px solid #aaaaaa !important;
+    border: 1px solid #aaaaaa !important;
+}
+
+.anm-edit__gui-row-name {
+    color: black !important;
+    -webkit-text-stroke: 0px rgb(85, 85, 85) !important;
+}
+
+.anm-edit__gui-row {
+    border: 1px solid hsl(0,0%,30%) !important;
+}
+
+.anm-edit__gui-row:nth-child(2n) {
+    background: hsl(0,0%,20%) none repeat scroll 0% 0% !important;
+}
+
+.anm-edit__gui-row .flex-v-center div input,
+anm-edit__gui-row .flex-v-center div button {
+    height: 24px !important;
+}
+
+.anm-win {
 }
 
 .charactereditor .avatar,
@@ -1702,6 +1723,71 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
 .sheet-damagetemplate > .sheet-result:not(:last-child) {
     border-bottom: 1px solid #000 !important;
 }
+
+.charsheet .sheet-charmancer .sheet-bottombar {
+    border-top: 1px dashed #555 !important;
+    background: hsl(0,0%,20%) !important;
+}
+
+.charsheet .sheet-charmancer button, .charsheet .sheet-charmancer button[type="roll"] {
+    background-color: hsl(0,0%,40%) !important;
+}
+
+.charsheet .sheet-charmancer button.sheet-exit {
+    color: #800 !important;
+    border-color: #800 !important;
+}
+
+.charsheet .sheet-charmancer .sheet-steps {
+    background: hsl(0,0%,20%) !important;
+    border-bottom: 1px dashed #555 !important;
+}
+
+.charsheet .sheet-charmancer .sheet-hilite,{
+    background: #333 !important;
+}
+
+.charsheet .sheet-charmancer .sheet-levels-hp-row {
+    background: #333 !important;
+    border-color: black !important;
+}
+
+.charsheet .sheet-charmancer .sheet-spell-holder label,
+.charsheet .sheet-charmancer .sheet-container .sheet-spell-item:nth-child(2n) {
+    background-color: #2a2a2a !important;
+}
+
+.charsheet .sheet-charmancer .sheet-asi-row .sheet-switch:empty ~ .sheet-switch-container .sheet-asi-tab,
+.charsheet .sheet-charmancer .sheet-asi-row .sheet-switch:not(:empty) ~ .sheet-switch-container .sheet-feat-tab {
+    background-color: #1a1a1a !important;
+}
+
+.charsheet .sheet-charmancer .sheet-lp-summary .sheet-after h2 {
+    background-color: #333 !important;
+}
+
+.charsheet .sheet-charmancer .sheet-lp-summary .sheet-highlight {
+    background-color: #2a2a2a !important;
+}
+
+.charsheet .sheet-charmancer .sheet-levels-hp-row .sheet-hpbylevel-toggle:checked ~ span.sheet-collapse + div > div {
+    background: #2a2a2a !important;
+}
+
+.charmancer .content-text, .charmancer .content-text h1, .charmancer .content-text h2, .charmancer .content-text h3, .charmancer .content-text h4 {
+    color: hsl(0,0%,75%) !important;
+}
+
+.charmancer .container {
+    background-color: #1a1a1a !important;
+}
+
+.charmancer .sheet-summary:nth-child(2n) {
+    background: #2a2a2a !important;
+}
+
+.charsheet .sheet-charmancer .sheet-warning {
+    color: rgb(160, 25, 94) !important;
 
 .r20es-dialog,
 .r20es-dialog div {
