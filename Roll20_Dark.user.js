@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2019.4.13.1
+// @version       2019.8.07.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -89,6 +89,7 @@ body {
 #floatinglayerbar.walls li.choosewalls,
 #floatinglayerbar.weather li.chooseweather,
 #floatinglayerbar.foreground li.chooseforeground,
+#floatinglayerbar.background li.choosebackground,
 #measure li.activerulermode {
     background-color: #282150 !important;
 }
@@ -1788,11 +1789,16 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
 
 .charsheet .sheet-charmancer .sheet-warning {
     color: rgb(160, 25, 94) !important;
+}
 
-.r20es-dialog,
+.r20es-dialog {
+    background-color: hsl(0,0%,10%) !important;
+    color:hsl(0,0%,75%) !important;
+}
+
 .r20es-dialog div {
     background-color: hsl(0,0%,10%) !important;
-    color: hsl(0,0%,80%) !important;
+    color:hsl(0,0%,75%) !important;
 }
 
 .r20es-clickable-text.selected {
