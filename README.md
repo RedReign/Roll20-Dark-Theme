@@ -17,6 +17,9 @@ If you are the generous type, I have set up a page to buy me a coffee [here](htt
 ![Tabletop](/media/stormy-fullscreen.png)
 ![PC OGL D&D 5e](/media/stormy-pc-sheet.png)
 ![NPC OGL D&D 5e](/media/stormy-npc-sheet.png)
+![PC OGL D&D 5e Spells](/media/red-ogl-1.png)
+![PC Shaped D&D 5e](/media/red-shaped-1.png)
+![PC Shaped D&D 5e Output](/media/red-shaped-2.png)
 
 ## Acknowledgements
 **Thanks to:**
