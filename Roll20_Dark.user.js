@@ -1809,6 +1809,10 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
     background-color: hsl(0,0%,10%) !important;
     color: hsl(0,0%,75%) !important;
 }
+
+.charsheet .sheet-sub-header {
+color: black;
+}
 `;
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
