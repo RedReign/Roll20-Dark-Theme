@@ -292,13 +292,11 @@ code {
 }
 
 #textchat-input {
-    width:300px!important;
     right:0!important;
     bottom:0!important;
+    padding-left:10px!important;
     background-color:hsl(0,0%,10%)!important;
-    padding:12px 1px 5px 5px!important;
-    margin:0 -5px 0 0!important;
-    border-top:0 solid hsl(0,0%,0%)!important;
+    border:0!important;
     text-align:left!important;
 }
 
