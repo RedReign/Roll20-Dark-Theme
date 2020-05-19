@@ -657,6 +657,8 @@ color: #a11504 !important;
 .sheet-save .sheet-label > span,
 .sheet-rolltemplate-simple .sheet-label > span,
 .message .sheet-rolltemplate-simple .sheet-header > span,
+.sheet-rolltemplate-skill .sheet-label > span,
+.message .sheet-rolltemplate-skill .sheet-header > span,
 .message .sheet-rolltemplate-npc .sheet-header, [name=\'roll_npc_dex\'] > span:first-child,
 [name=\'roll_npc_str\'] > span:first-child, [name=\'roll_npc_cha\'] > span:first-child,
 [name=\'roll_npc_wis\'] > span:first-child, [name=\'roll_npc_int\'] > span:first-child,
@@ -1680,7 +1682,8 @@ div.sheet-licensecontainer .sheet-npc_options span {
     background-color: #666 !important;
 }
 
-div.sheet-rolltemplate-simple div.sheet-container {
+div.sheet-rolltemplate-simple div.sheet-container,
+div.sheet-rolltemplate-skill div.sheet-container {
     background-image: url("https://i.imgur.com/FjwWl2K.png") !important;
     background-color: transparent !important;
 }
