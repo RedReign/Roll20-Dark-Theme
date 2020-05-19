@@ -1847,6 +1847,41 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
     background-color: hsl(0,0%,10%) !important;
     color: hsl(0,0%,75%) !important;
 }
+
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+
+::-webkit-scrollbar-button {
+	width: 0px;
+	height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #525252;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #4c4c4c;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: #404040;
+}
+
+::-webkit-scrollbar-track {
+	background: #272727;
+	border: 0px dashed #ffffff;
+	border-radius: 22px;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}
+
 `;
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
