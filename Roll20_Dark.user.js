@@ -657,7 +657,6 @@ color: #a11504 !important;
 .sheet-save .sheet-label > span,
 .sheet-rolltemplate-simple .sheet-label > span,
 .message .sheet-rolltemplate-simple .sheet-header > span,
-.sheet-rolltemplate-skill .sheet-label > span,
 .message .sheet-rolltemplate-skill .sheet-header > span,
 .message .sheet-rolltemplate-npc .sheet-header, [name=\'roll_npc_dex\'] > span:first-child,
 [name=\'roll_npc_str\'] > span:first-child, [name=\'roll_npc_cha\'] > span:first-child,
