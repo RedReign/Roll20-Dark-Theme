@@ -413,6 +413,8 @@ hr {
 	background-color: hsl(0, 0%, 10%) !important;
 	border: 2px solid hsl(50, 30%, 30%) !important;
 	color:hsl(0,0%,90%) !important;
+	padding-right: 4px;
+	padding-left: 4px;
 }
 
 #textchat .inlinerollresult.importantroll {
