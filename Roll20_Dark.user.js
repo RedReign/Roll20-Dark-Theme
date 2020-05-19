@@ -357,6 +357,40 @@ textarea,select,input,table,
 	color:hsl(240,100%,65%)!important;
 }
 
+.diceroll.d4 .backing {
+	font-family:"dicefontd4";
+	top:-6px;
+	left:1px;
+}
+
+.diceroll.d6 .backing {
+	font-family:"dicefontd6";
+	top:-4px;
+}
+
+.diceroll.d8 .backing {
+	font-family:"dicefontd8";
+	top:-3px;
+	left:0.5px;
+}
+
+.diceroll.d10 .backing {
+	font-family:"dicefontd10";
+	top:-5px;
+	left:1px;
+}
+
+.diceroll.d12 .backing {
+	font-family:"dicefontd12";
+	left:0.5px
+}
+
+.diceroll.d20 .backing {
+	font-family:"dicefontd20";
+	top:-3px;
+	left:1px
+}
+
 .ui-dialog .ui-dialog-buttonpane {
 	background-color:hsl(0,0%,15%)!important;
 	border-top:none!important;
