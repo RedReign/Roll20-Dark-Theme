@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Roll20 Dark
 // @namespace     https://openuserjs.org/scripts/RedReign/Roll20_Dark
-// @description	  A dark theme for Roll20.net.
+// @description   A dark theme for Roll20.net.
 // @author        RedReign
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
@@ -11,15 +11,15 @@
 // ==/UserScript==
 (function() {var css =`
 .button-2{
-	background-color: hsl(0,0%,10%) !important;
+    background-color: hsl(0,0%,10%) !important;
 }
 
 .button-1{
-	background-color: hsl(0,0%,10%) !important;
+    background-color: hsl(0,0%,10%) !important;
 }
 
 #color_selector{
-	background-color:hsl(0,0%,10%) !important;
+    background-color:hsl(0,0%,10%) !important;
     border: 1px solid hsl(250,25%,15%) !important;
 }
 
@@ -28,41 +28,41 @@ body {
 }
 
 #floatingtoolbar, #floatinglayerbar {
-	background-color:hsl(0,0%,10%) !important;
-	border: none !important;
-	box-shadow: none !important;
-	width: 40px !important;
+    background-color:hsl(0,0%,10%) !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 40px !important;
 }
 
 #floatingtoolbar div.submenu {
-	left: 40px !important;
-	padding: 0 !important;
-	top: 0 !important;
+    left: 40px !important;
+    padding: 0 !important;
+    top: 0 !important;
 }
 
 #floatingtoolbar div.submenu .pictos, #floatingtoolbar div.submenu .pictosthree, #floatingtoolbar div.submenu .pictostwo {
-	left: 15px !important;
-	position: absolute !important;
-	text-align: center !important;
-	width: 20px !important;
+    left: 15px !important;
+    position: absolute !important;
+    text-align: center !important;
+    width: 20px !important;
 }
 
 #floatingtoolbar div.submenu ul {
-	background-color:#333 !important;
-	border: 0 !important;
-	border-radius: 0 !important;
-	padding: 0 !important;
-	width: 190px !important;
+    background-color:#333 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    width: 190px !important;
 }
 
 #floatingtoolbar div.submenu ul li {
-	color:hsl(0,0%,80%) !important;
-	padding-right: 20px !important;
+    color:hsl(0,0%,80%) !important;
+    padding-right: 20px !important;
     padding-left: 45px !important;
 }
 
 #floatingtoolbar div.submenu ul li span {
-	padding-left: 10px !important;
+    padding-left: 10px !important;
 }
 
 #floatingtoolbar div.submenu ul li img {
@@ -95,8 +95,8 @@ body {
 }
 
 #floatingtoolbar li, #floatinglayerbar li {
-	border: 0 !important;
-	color:hsl(0,0%,80%) !important;
+    border: 0 !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 #ttaudio_results .result,
@@ -119,28 +119,28 @@ background-color: #282150 !important;
 }
 
 #page-toolbar {
-	background-color:hsl(0,0%,10%) !important;
-	border-radius: 0 !important;
+    background-color:hsl(0,0%,10%) !important;
+    border-radius: 0 !important;
 }
 
 #page-toolbar .availablepage {
-	box-sizing: border-box !important;
+    box-sizing: border-box !important;
 }
 
 #page-toolbar .availablepage span {
-	color:hsl(0,0%,80%) !important;
-	font-size: 12px !important;
+    color:hsl(0,0%,80%) !important;
+    font-size: 12px !important;
 }
 
 #page-toolbar .handle {
-	background:hsl(0,0%,10%) !important;
-	border:1px solid hsl(0,0%,0%)!important;
-	border-radius: 0 0 100% 100% !important;
-	color:hsl(0,0%,80%) !important;
+    background:hsl(0,0%,10%) !important;
+    border:1px solid hsl(0,0%,0%)!important;
+    border-radius: 0 0 100% 100% !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 #editor-wrapper {
-	overflow: scroll !important; /// CHANGE HIDDEN TO SCROLL FOR SCROLLBARS
+    overflow: scroll !important; /// CHANGE HIDDEN TO SCROLL FOR SCROLLBARS
 }
 
 .btn.btn-danger {
@@ -155,76 +155,76 @@ background-color: #282150 !important;
 }
 
 .ui-widget-content {
-	color:hsl(0,0%,75%)!important;
-	border:1px solid black!important;
-	background:hsl(0,0%,10%)!important;
+    color:hsl(0,0%,75%)!important;
+    border:1px solid black!important;
+    background:hsl(0,0%,10%)!important;
 }
 
 .ui-dialog-titlebar-close {
-	background:hsl(0,0%,80%)!important;
+    background:hsl(0,0%,80%)!important;
 }
 
 #rightsidebar {
-	background-color:hsl(0,0%,0%)!important;
+    background-color:hsl(0,0%,0%)!important;
 }
 
 #sidebarcontrol {
-	opacity: .7 !important;
-	padding: 0 !important;
-	-webkit-transform: translateX(0) rotate(-90deg) !important;
-	-moz-transform: translateX(0) rotate(-90deg) !important;
-	width: 50px !important;
-	text-align: center !important;
-	border: 2px solid hsl(0,0%,0%)!important;
-	font-size: 10px !important;
-	color:hsl(0,0%,80%) !important;
-	background-color:hsl(0,0%,10%) !important;
-	height: 24px !important;
-	line-height: 35px !important;
-	text-transform: uppercase !important;
-	letter-spacing: 2px !important;
-	-webkit-transform-origin: 100% 100% !important;
-	-moz-transform-origin: 100% 100% !important;
-	border-radius: 100% 100% 0 0 !important;
-	top: 50% !important;
+    opacity: .7 !important;
+    padding: 0 !important;
+    -webkit-transform: translateX(0) rotate(-90deg) !important;
+    -moz-transform: translateX(0) rotate(-90deg) !important;
+    width: 50px !important;
+    text-align: center !important;
+    border: 2px solid hsl(0,0%,0%)!important;
+    font-size: 10px !important;
+    color:hsl(0,0%,80%) !important;
+    background-color:hsl(0,0%,10%) !important;
+    height: 24px !important;
+    line-height: 35px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    -webkit-transform-origin: 100% 100% !important;
+    -moz-transform-origin: 100% 100% !important;
+    border-radius: 100% 100% 0 0 !important;
+    top: 50% !important;
     margin-right: -1px !important;
-	margin-top: -62.5px !important;
-	transition: width, margin-top, opacity, height, font-size .5s,.5s,.5s,.5s,.5s !important;
+    margin-top: -62.5px !important;
+    transition: width, margin-top, opacity, height, font-size .5s,.5s,.5s,.5s,.5s !important;
 }
 
 #sidebarcontrol:hover {
-	opacity: 1 !important;
-	width: 75px !important;
-	margin-top: -80px !important;
-	height: 32px !important;
-	font-size: 14px !important;
-	transition: width, margin-top, opacity, height, font-size .5s,.5s,.5s,.5s,.5s !important;
+    opacity: 1 !important;
+    width: 75px !important;
+    margin-top: -80px !important;
+    height: 32px !important;
+    font-size: 14px !important;
+    transition: width, margin-top, opacity, height, font-size .5s,.5s,.5s,.5s,.5s !important;
 }
 
 #sidebarcontrol .fonticon-menu {
-	display: none !important;
+    display: none !important;
 }
 
 #sidebarcontrol:after {
-	content: \'Menu\' !important;
+    content: \'Menu\' !important;
 }
 
 code {
-	color:hsl(0,0%,750%)!important;
-	background-color:hsl(0,0%,10%)!important;
-	border:1px solid hsl(0,0%,0%)!important;
+    color:hsl(0,0%,750%)!important;
+    background-color:hsl(0,0%,10%)!important;
+    border:1px solid hsl(0,0%,0%)!important;
 }
 
 #textchat .formula,#textchat .rolled {
-	background:hsl(0,0%,10%)!important;
-	border:1px solid hsl(0,0%,0%)!important;
+    background:hsl(0,0%,10%)!important;
+    border:1px solid hsl(0,0%,0%)!important;
 }
 
 #textchat .message {
-	color:hsl(0,0%,80%)!important;
-	background-color:hsl(0,0%,10%)!important;
-	border:none!important;
-	border-right:1px solid hsl(0,0%,50%)!important;
+    color:hsl(0,0%,80%)!important;
+    background-color:hsl(0,0%,10%)!important;
+    border:none!important;
+    border-right:1px solid hsl(0,0%,50%)!important;
     height: auto !important;
 }
 
@@ -233,19 +233,19 @@ code {
 }
 
 #textchat .by {
-	color:hsl(44,63%,63%)!important;
+    color:hsl(44,63%,63%)!important;
 }
 
 #textchat .rolled {
-	color:hsl(0,0%,75%)!important;
+    color:hsl(0,0%,75%)!important;
 }
 
 #textchat .message.system {
-	color:hsl(360,100%,100%)!important;
+    color:hsl(360,100%,100%)!important;
 }
 
 #textchat .userscript-sharelink {
-	background-color:black !important;
+    background-color:black !important;
 }
 
 #textchat .message > .userscript-sharelink:hover a {
@@ -253,62 +253,60 @@ code {
 }
 
 #textchat .userscript-commandintro {
-	color:hsl(360,100%,100%)!important;
+    color:hsl(360,100%,100%)!important;
 }
 
 #textchat .message.rollresult {
-	color:hsl(0,0%,75%)!important;
+    color:hsl(0,0%,75%)!important;
 }
 
 #textchat .message .spacer {
-	background-color: black !important;
-	margin-right: -5px !important;
-	height: 1px !important;
+    background-color: black !important;
+    margin-right: -5px !important;
+    height: 1px !important;
     margin-top: -3px !important;
 }
 
 #textchat .message.emote {
-	color:hsl(30,40%,45%)!important;
+    color:hsl(30,40%,45%)!important;
 }
 
 #textchat .message.emote .spacer {
-	background-color: black !important;
+    background-color: black !important;
 }
 
 #rightsidebar ul.tabmenu {
-	top: 2px!important;
-	right: 1px!important;
-	background-color: hsl(0,0%,10%) !important;
+    top: 2px!important;
+    right: 1px!important;
+    background-color: hsl(0,0%,10%) !important;
 }
 
 .ui-tabs .ui-tabs-nav {
-	padding:1px 5px!important;
-	border-bottom:none!important;
+    padding:1px 5px!important;
+    border-bottom:none!important;
 }
 
 .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
-	box-shadow:none !important;
-	text-shadow:none !important;
+    box-shadow:none !important;
+    text-shadow:none !important;
 }
 
 #textchat-input {
-	width:300px!important;
-	right:0!important;
-	bottom:0!important;
-	background-color:hsl(0,0%,10%)!important;
-	padding:12px 1px 5px 5px!important;
-	margin:0 -5px 0 0!important;
-	border-top:0 solid hsl(0,0%,0%)!important;
-	text-align:left!important;
+    right:0!important;
+    bottom:0!important;
+    padding-left:10px!important;
+    background-color:hsl(0,0%,10%)!important;
+    border:0!important;
+    text-align:left!important;
 }
 
 .btn {
 background-image: none !important;
-	text-shadow:none!important;
+    text-shadow:none!important;
 }
 
 .btn:hover {
-	color:hsl(0,0%,100%)!important;
+    color:hsl(0,0%,100%)!important;
 }
 
 textarea,select,input,table,
@@ -317,9 +315,9 @@ textarea,select,input,table,
 #rightsidebar .btn,
 .tokenactions .btn,
 .ui-dialog-content .ui-dialog-buttonset > button {
-	 background-color:hsl(0,0%,10%)!important;
-	 color:hsl(0,0%,75%)!important;
-	 border-color:black!important;
+    background-color:hsl(0,0%,10%)!important;
+    color:hsl(0,0%,75%)!important;
+    border-color:black!important;
 }
 
 .ui-dialog-buttonset button {
@@ -333,57 +331,91 @@ textarea,select,input,table,
 .tokenactions .btn:hover,
 .r20es-dialog .btn:hover,
 .ui-dialog-buttonset button:hover {
-	background-color:hsl(0,0%,20%)!important;
-	color:hsl(0,0%,100%)!important;
+    background-color:hsl(0,0%,20%)!important;
+    color:hsl(0,0%,100%)!important;
 }
 
 .diceroll .didroll {
-	text-shadow:0 0 10px hsl(0,0%,0%)!important;
-	color:hsl(0,0%,75%)!important;
+    text-shadow:0 0 10px hsl(0,0%,0%)!important;
+    color:hsl(0,0%,75%)!important;
 }
 
 .diceroll.critfail .didroll {
-	text-shadow:0 0 10px hsl(0,100%,50%)!important;
-	color:hsl(0,80%,50%)!important;
+    text-shadow:0 0 10px hsl(0,100%,50%)!important;
+    color:hsl(0,80%,50%)!important;
 }
 
 .diceroll.critsuccess .didroll {
-	text-shadow:0 0 10px hsl(100,50%,50%)!important;
-	color:hsl(100,50%,50%)!important;
+    text-shadow:0 0 10px hsl(100,50%,50%)!important;
+    color:hsl(100,50%,50%)!important;
 }
 
 .diceroll.importantroll .didroll {
-	text-shadow:0 0 10px hsl(240,100%,65%)!important;
-	color:hsl(240,100%,65%)!important;
+    text-shadow:0 0 10px hsl(240,100%,65%)!important;
+    color:hsl(240,100%,65%)!important;
+}
+
+.diceroll.d4 .backing {
+    font-family:"dicefontd4";
+    top:-6px;
+    left:1px;
+}
+
+.diceroll.d6 .backing {
+    font-family:"dicefontd6";
+    top:-4px;
+}
+
+.diceroll.d8 .backing {
+    font-family:"dicefontd8";
+    top:-3px;
+    left:0.5px;
+}
+
+.diceroll.d10 .backing {
+    font-family:"dicefontd10";
+    top:-5px;
+    left:1px;
+}
+
+.diceroll.d12 .backing {
+    font-family:"dicefontd12";
+    left:0.5px
+}
+
+.diceroll.d20 .backing {
+    font-family:"dicefontd20";
+    top:-3px;
+    left:1px
 }
 
 .ui-dialog .ui-dialog-buttonpane {
-	background-color:hsl(0,0%,15%)!important;
-	border-top:none!important;
-	box-shadow:none!important;
+    background-color:hsl(0,0%,15%)!important;
+    border-top:none!important;
+    box-shadow:none!important;
 }
 
 .ui-dialog .ui-dialog-titlebar {
-	border:none!important;
-	background-color:hsl(0,0%,15%)!important;
+    border:none!important;
+    background-color:hsl(0,0%,15%)!important;
 }
 
 #initiativewindow ul li {
-	border-bottom:1px solid hsl(0,0%,10%)!important;
-	background-color:hsl(0,0%,25%)!important;
-	text-shadow:none!important;
+    border-bottom:1px solid hsl(0,0%,10%)!important;
+    background-color:hsl(0,0%,25%)!important;
+    text-shadow:none!important;
 }
 
 #initiativewindow ul li:first-child {
-	background-color:hsl(100,30%,25%)!important;
+    background-color:hsl(100,30%,25%)!important;
 }
 
 .ui-widget-content a,.ui-dialog .ui-dialog-title,label,h1,h2,h3,h4,h5,h6 {
-	color:hsl(0,0%,75%)!important;
+    color:hsl(0,0%,75%)!important;
 }
 
 hr {
-	border-color:hsl(0,0%,15%)!important;
+    border-color:hsl(0,0%,15%)!important;
 }
 
 .sheet-rolltemplate-default caption {
@@ -393,109 +425,111 @@ hr {
 .sheet-rolltemplate-default tr:nth-child(2n),
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
-	background-color:hsl(0,0%,15%)!important;
+    background-color:hsl(0,0%,15%)!important;
 }
 
 .table tbody tr:hover td,.table tbody tr:hover th {
-	background-color:hsl(0,0%,30%)!important;
+    background-color:hsl(0,0%,30%)!important;
 }
 
 .table th,.table td {
-	border-color:hsl(0,0%,10%)!important;
-	background-color:hsl(0,0%,25%)!important;
+    border-color:hsl(0,0%,10%)!important;
+    background-color:hsl(0,0%,25%)!important;
 }
 
 #imagedialog .searchbox {
-	background:none!important;
+    background:none!important;
 }
 
 #textchat .inlinerollresult {
-	background-color: hsl(0, 0%, 10%) !important;
-	border: 2px solid hsl(50, 30%, 30%) !important;
-	color:hsl(0,0%,90%) !important;
+    background-color: hsl(0, 0%, 10%) !important;
+    border: 2px solid hsl(50, 30%, 30%) !important;
+    color:hsl(0,0%,90%) !important;
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
 #textchat .inlinerollresult.importantroll {
-	border: 2px solid hsl(240, 100%, 65%) !important;
+    border: 2px solid hsl(240, 100%, 65%) !important;
 }
 
 #textchat .inlinerollresult.fullcrit {
-	border: 2px solid hsl(104, 79%, 39%) !important;
+    border: 2px solid hsl(104, 79%, 39%) !important;
 }
 
 #textchat .inlinerollresult.fullfail {
-	border: 2px solid hsl(0, 79%, 39%) !important;
+    border: 2px solid hsl(0, 79%, 39%) !important;
 }
 
 div.dd-content {
-	color:hsl(0,0%,75%) !important;
+    color:hsl(0,0%,75%) !important;
 }
 
 div.dd-content:hover {
-	background-color:hsl(0,0%,40%) !important;
+    background-color:hsl(0,0%,40%) !important;
 }
 
 [class=\'sheet-row\'] {
-	color:hsl(0,0%,50%) !important;
+    color:hsl(0,0%,50%) !important;
 }
 
 .ui-tabs .ui-tabs-nav li:hover,
 .ui-tabs .ui-tabs-nav li a:hover {
-	background: hsl(0,0%,20%) !important;
-	border-bottom: 2px solid hsl(44,63%,63%) !important;
+    background: hsl(0,0%,20%) !important;
+    border-bottom: 2px solid hsl(44,63%,63%) !important;
 }
 
 li.ui-tabs-active.ui-state-active:focus {
-	outline: none;
+    outline: none;
 }
 
 li.ui-tabs-active.ui-state-active:focus {
-	border-color: transparent !important;
-	outline: none;
+    border-color: transparent !important;
+    outline: none;
 }
 
 li.ui-tabs-active.ui-state-active:hover,
 li.ui-tabs-active.ui-state-active > a:hover {
-	color:hsl(0,0%,100%) !important;
+    color:hsl(0,0%,100%) !important;
 }
 
 li.ui-tabs-active.ui-state-active > a {
-	outline: none;
-	border-bottom: 2px solid hsl(44,63%,63%) !important;
-	color:hsl(0,0%,96%) !important;
+    outline: none;
+    border-bottom: 2px solid hsl(44,63%,63%) !important;
+    color:hsl(0,0%,96%) !important;
 }
 
 .dd-item.character > div.dd-content > .name {
-	color:hsl(214,100%,79%) !important;
+    color:hsl(214,100%,79%) !important;
 }
 
 .dd-item.handout .dd-content > .name {
-	color:hsl(214,100%,79%) !important
+    color:hsl(214,100%,79%) !important
 }
 
 .sheet-container {
-	background-color:hsl(0,0%,10%) !important;
+    background-color:hsl(0,0%,10%) !important;
 
 }
 
 .sheet-desc {
-	color:hsl(0,0%,75%) !important;
+    color:hsl(0,0%,75%) !important;
 }
 
 .sheet-header {
-	color:hsl(0,0%,100%) !important;
+    color:hsl(0,0%,100%) !important;
 }
 
 .sheet-rolltemplate-dmg {
-	margin-top: 0px !important;
+    margin-top: 0px !important;
 }
 
 .sheet-rolltemplate-dmg > .sheet-desc {
-	background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .sheet-sublabel {
-	margin-top: 3px !important;
+    margin-top: 3px !important;
 }
 
 .sheet-rolltemplate-npc,
@@ -503,19 +537,19 @@ li.ui-tabs-active.ui-state-active > a {
 .sheet-rolltemplate-npcatk,
 .sheet-rolltemplate-npcdmg,
 .sheet-rolltemplate-traits {
-	border: 2px solid hsl(0,0%,0%) !important;
+    border: 2px solid hsl(0,0%,0%) !important;
     border-radius: 8px !important;
-	background-color:transparent !important;
+    background-color:transparent !important;
 }
 
 .charsheet .sheet-red,
 .charsheet .sheet-npc .sheet-display .sheet-red input,
 .charsheet .sheet-npc .sheet-display .sheet-red span {
-	color:hsl(0,0%,80%) !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 .sheet-display .sheet-row.sheet-subtitle span {
-	color: hsl(0,100%,30%) !important;
+    color: hsl(0,100%,30%) !important;
 }
 
  {
@@ -527,16 +561,16 @@ li.ui-tabs-active.ui-state-active > a {
 }
 
 [name=\attr_name_display\]  {
-	color:hsl(0,100%,50%) !important;
-	font-weight: bold;
+    color:hsl(0,100%,50%) !important;
+    font-weight: bold;
 }
 
 .charsheet .sheet-options .sheet-row > span, [name=\attr_name\] {
-	color:hsl(0,0%,80%) !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 [name=\attr_desc\]  {
-	color:hsl(0,0%,80%) !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 .charsheet .sheet-triangle,
@@ -545,182 +579,183 @@ li.ui-tabs-active.ui-state-active > a {
 .charsheet .sheet-header select,
 .charsheet .sheet-hp .sheet-top input,
 .charsheet .sheet-hdice-dsaves-container .sheet-top input[type=text] {
-	border-color:hsl(0,0%,25%) !important
+    border-color:hsl(0,0%,25%) !important
 }
 
 .sheet-value > input {
-	background-color: transparent !important;
-	color:hsl(0,0%,0%) !important;
+    background-color: transparent !important;
+    color:hsl(0,0%,0%) !important;
 }
 
 .sheet-rolltemplate-atk .sheet-sublabel span,
 .sheet-rolltemplate-atkdmg .sheet-sublabel span,
 .sheet-rolltemplate-dmg .sheet-sublabel span,
 .charsheet {
-	color:hsl(0,0%,80%) !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 .ui-autocomplete-input {
-	color:hsl(0,0%,80%) !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 textarea {
-	color:hsl(0,0%,100%) !important;
+    color:hsl(0,0%,100%) !important;
 }
 
 .nav.nav-tabs > li.active > a {
-	color:hsl(0,0%,96%) !important;
-	font-weight: bold;
-	background-color: transparent;
-	border-bottom: 2px solid hsl(44,63%,63%) !important;
+    color:hsl(0,0%,96%) !important;
+    font-weight: bold;
+    background-color: transparent;
+    border-bottom: 2px solid hsl(44,63%,63%) !important;
 }
 
 .sheet-spell-level input {
-	background-color:hsl(0,0%,10%) !important;
-	color:hsl(0,0%,80%) !important;
+    background-color:hsl(0,0%,10%) !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 .sheet-spell-level .sheet-expended {
-	border-left: none !important;
+    border-left: none !important;
 }
 
 .repcontainer {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .repcontrol {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .sheet-title > button {
-	height: 40px;
+    height: 40px;
 }
 
 .sheet-attr-container > button > input {
-	min-width: 20px !important;
+    min-width: 20px !important;
 }
 
 .dd-sortablehandle {
-	color: whitesmoke !important;
+    color: whitesmoke !important;
 }
 
 .sheet-spell-level .sheet-label {
-	color:hsl(0,0%,75%) !important;
+    color:hsl(0,0%,75%) !important;
 }
 
 .sheet-spellcard.btn.ui-draggable {
-	background-color:transparent !important;
+    background-color:transparent !important;
 }
 
 .nav-tabs {
-	border-color:hsl(0,0%,47%) !important;
+    border-color:hsl(0,0%,47%) !important;
 }
 
 .nav-tabs>.active>a,
 .nav-tabs>.active>a:hover {
-	background-color: transparent !important;
-	border-color:transparent !important;
+    background-color: transparent !important;
+    border-color:transparent !important;
 }
 
 .nav-tabs a:hover,
 .nav-tabs a:hover {
-	background-color: transparent !important;
-	border-color:hsl(0,0%,100%) !important;
-	border-bottom: 1px solid hsl(0,0%,100%) !important;
-	color:hsl(0,0%,80%) !important;
+    background-color: transparent !important;
+    border-color:hsl(0,0%,100%) !important;
+    border-bottom: 1px solid hsl(0,0%,100%) !important;
+    color:hsl(0,0%,80%) !important;
 }
 
 .inlinerollresult {
-	margin: 3px !important;
+    margin: 3px !important;
 }
 
 .sheet-rolltemplate-npc,
 .sheet-rolltemplate-npcaction .sheet-container,
 .sheet-rolltemplate-npcatk {
-	width: 180px;
-	margin-top: 5px;
+    width: 180px;
+    margin-top: 5px;
 }
 
 .sheet-desc span.inlinerollresult {
-//	padding-top: 5px !important;
-//	padding-bottom: 5px !important;
+//    padding-top: 5px !important;
+//    padding-bottom: 5px !important;
     line-height: 1.5em !important;
 }
 
 color: #a11504 !important;
 
 .sheet-savedc span.inlinerollresult {
-	padding: 4px !important;
+    padding: 4px !important;
 }
 
 .sheet-savedc > span,
 .sheet-save .sheet-label > span,
 .sheet-rolltemplate-simple .sheet-label > span,
 .message .sheet-rolltemplate-simple .sheet-header > span,
+.message .sheet-rolltemplate-skill .sheet-header > span,
 .message .sheet-rolltemplate-npc .sheet-header, [name=\'roll_npc_dex\'] > span:first-child,
 [name=\'roll_npc_str\'] > span:first-child, [name=\'roll_npc_cha\'] > span:first-child,
 [name=\'roll_npc_wis\'] > span:first-child, [name=\'roll_npc_int\'] > span:first-child,
 [name=\'roll_npc_con\'] > span:first-child, [type=\'roll\'], [name=\attr_npcd_name\] {
-	color:hsl(44,63%,63%) !important;
-	border-color:hsl(0,0%,50%) !important;
+    color:hsl(44,63%,63%) !important;
+    border-color:hsl(0,0%,50%) !important;
 }
 
 #textchat .message {
-	padding-top: 3px;
+    padding-top: 3px;
 }
 
 .message.general {
-	overflow-x: hidden;
-	height: 31px;
+    overflow-x: hidden;
+    height: 31px;
 }
 
 #imagedialog #librarysearchroot .googleresult {
-	background-color:hsl(0,0%,10%) !important;
+    background-color:hsl(0,0%,10%) !important;
 }
 
 #imagedialog #librarysearchroot .marketplacead {
-	background-color:hsl(0,0%,10%) !important;
+    background-color:hsl(0,0%,10%) !important;
 }
 
 #imagedialog #librarysearchroot .expandsearch {
-	background-color:hsl(0,0%,10%) !important;
+    background-color:hsl(0,0%,10%) !important;
 }
 
 #imagedialog #librarysearchroot .alert.orange {
-	background-color:hsl(0,0%,10%) !important;
-	color:hsl(0,0%,80%) !important;
-	border-color:transparent !important;
-	text-shadow:none !important;
+    background-color:hsl(0,0%,10%) !important;
+    color:hsl(0,0%,80%) !important;
+    border-color:transparent !important;
+    text-shadow:none !important;
 }
 
 .sheet-arrow-right {
-	border-color: hsl(0,0%,0%) !important;
-	border-top: 2px solid !important;
-	border-bottom: 0px transparent !important;
-	padding-bottom: 4px !important;
-	color: black !important;
-	border-left: none !important;
+    border-color: hsl(0,0%,0%) !important;
+    border-top: 2px solid !important;
+    border-bottom: 0px transparent !important;
+    padding-bottom: 4px !important;
+    color: black !important;
+    border-left: none !important;
 }
 
 .sheet-italics {
-	color:hsl(0,0%,70%) !important;
+    color:hsl(0,0%,70%) !important;
 }
 
 .sheet-bold {
-	color:hsl(0,0%,90%) !important;
+    color:hsl(0,0%,90%) !important;
 }
 
 .sheet-damagetemplate > .sheet-result:not(:last-child) {
-	border-bottom: 1px solid hsl(0,50%,50%);
+    border-bottom: 1px solid hsl(0,50%,50%);
 }
 
 .sheet-rolltemplate-atkdmg .sheet-damagetemplate .sheet-result,
 .sheet-rolltemplate-dmg .sheet-damagetemplate .sheet-result {
-	padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .sheet-action sheet-compendium-drop-target ui-droppable {
-	color:hsl(0,0%,80%);
+    color:hsl(0,0%,80%);
 }
 
 .charsheet .sheet-attacks .sheet-options-flag:checked + span,
@@ -735,7 +770,7 @@ color: #a11504 !important;
 .charsheet .sheet-core .sheet-header .sheet-options-flag:checked + span,
 .sheet-rolltemplate-5e-shaped a[href^='!'],
 .sheet-rolltemplate-5e-shaped a[href^='~'] {
-	color:hsl(44,63%,63%) !important;
+    color:hsl(44,63%,63%) !important;
 }
 
 .keywords,
@@ -749,102 +784,102 @@ color: #a11504 !important;
 #movablevideo,
 #globalvolume,
 #decksize {
-	background-color:hsl(0,0%,10%) !important;
-	color:hsl(0,0%,75%) !important;
+    background-color:hsl(0,0%,10%) !important;
+    color:hsl(0,0%,75%) !important;
 }
 
 .sheet-rolltemplate-spell {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .sheet-tab-button.sheet-core,
 .sheet-advantagetoggle {
-	margin-top: 1px !important;
+    margin-top: 1px !important;
 }
 
 .avatar {
-	margin-top: 1px;
+    margin-top: 1px;
 }
 
 .charsheet .sheet-advantagetoggle input[type=radio]:checked + span,
 .charsheet input[type=radio].sheet-tab-button:checked + span {
-	background-color:hsl(44,63%,63%) !important;
-	color:hsl(0,0%,0%) !important;
+    background-color:hsl(44,63%,63%) !important;
+    color:hsl(0,0%,0%) !important;
 }
 
 .charsheet .sheet-body {
-	margin-top: 25px !important;
+    margin-top: 25px !important;
 }
 
 .charsheet .repcontrol .repcontrol_add:before {
-	background-color:hsl(122,46%,54%) !important;
-	margin-right: 5px;
+    background-color:hsl(122,46%,54%) !important;
+    margin-right: 5px;
 }
 
 .charsheet .repcontrol .repcontrol_edit:after {
-	background-color:hsl(30,90%,59%) !important;
-	margin-left: 5px;
+    background-color:hsl(30,90%,59%) !important;
+    margin-left: 5px;
 }
 
 .ui-dialog .charsheet input[type=number] {
-	width: 3.5em;
-	background-color:transparent !important; //FIXES USES ON CHARACTER SHEET
-	color:hsl(0,0%,96%) !important;
+    width: 3.5em;
+    background-color:transparent !important; //FIXES USES ON CHARACTER SHEET
+    color:hsl(0,0%,96%) !important;
 }
 
 .charsheet .sheet-header .sheet-header-info select {
-	padding-left: 5px !important;
-	padding-right: 5px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
 }
 
 .charsheet .sheet-cantrips > .sheet-label {
-	color:hsl(0,0%,96%) !important;
-	font-weight: 300 !important;
+    color:hsl(0,0%,96%) !important;
+    font-weight: 300 !important;
 }
 
 input[name=\attr_gp\] {
-	color:hsl(51,100%,50%) !important;
+    color:hsl(51,100%,50%) !important;
 }
 
 input[name=\attr_pp\] {
-	color:hsl(40,5%,89%) !important;
+    color:hsl(40,5%,89%) !important;
 }
 
 [type=\'roll\'] > span, .sheet-attr {
-	color:hsl(0,0%,100%) !important;
+    color:hsl(0,0%,100%) !important;
 }
 
 input[name=\attr_sp\] {
-	color:hsl(0,0%,75%) !important;
+    color:hsl(0,0%,75%) !important;
 }
 
 input[name=\attr_cp\] {
-	color:hsl(29,57%,46%) !important;
+    color:hsl(29,57%,46%) !important;
 }
 
 .attributesabilities .abil {
-	background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 
 [name=\roll_death_save\], [name=\roll_hit_dice\]  {
-	color:hsl(0,0%,100%) !important;
+    color:hsl(0,0%,100%) !important;
 }
 
 [name=\attr_ac\], [name=\attr_initiative_bonus\], [name=\attr_speed\] {
-	color:hsl(0,0%,100%) !important;
+    color:hsl(0,0%,100%) !important;
 }
 
 .sheet-label {
-	color:hsl(0,0%,80%);
+    color:hsl(0,0%,80%);
 }
 
 #floatingtoolbar #measure:not(.activebutton) > img {
-	-webkit-filter: brightness(3) !important;
+    -webkit-filter: brightness(3) !important;
 }
 
 .sheet-wide {
-	color:hsl(0,0%,90%) !important;
+    color:hsl(0,0%,90%) !important;
 }
 
 /* RED'S EDITS */
@@ -920,12 +955,12 @@ position: static !important;
 }
 
 #textchat .message.you {
-	color:hsl(0,0%,80%)!important;
-	background-color:hsl(250,25%,15%)!important;
+    color:hsl(0,0%,80%)!important;
+    background-color:hsl(250,25%,15%)!important;
 }
 
 #textchat .message.emote {
-	background-color:hsl(20,25%,15%)!important;
+    background-color:hsl(20,25%,15%)!important;
 }
 
 #textchat .message.private,
@@ -935,11 +970,11 @@ position: static !important;
 .sheet-rolltemplate-5e-shaped .sheet-gm-info-block,
 .sheet-rolltemplate-5e-shaped .sheet-gm-info-flex,
 .sheet-rolltemplate-5e-shaped .sheet-gm-info-inline-block {
-	background-color:hsl(58,25%,15%)!important;
+    background-color:hsl(58,25%,15%)!important;
 }
 
 .dd-item.handout .dd-content .redactor_editor > .name {
-	background-color:hsl(0,0%,20%) !important
+    background-color:hsl(0,0%,20%) !important
 }
 li.search-choice {
 background-color: #333 !important;
@@ -969,7 +1004,7 @@ box-shadow: 0 3px 3px #222 !important;
 }
 
 .redactor_editor.content {
-	background-color: hsl(0,0%,10%) !important;
+    background-color: hsl(0,0%,10%) !important;
 }
 
 .note-editor span[style*='color: rgb( 0 , 0 , 0 )'],
@@ -997,7 +1032,7 @@ border: 1px solid #000 !important;
 
 #containerdiv,
 .redactor_box, .redactor_editor, .redactor_editor:focus, div[contenteditable], div[contenteditable]:focus {
-	background: #1a1a1a !important;
+    background: #1a1a1a !important;
 }
 
 .charactereditor .avatar {
@@ -1005,15 +1040,15 @@ background-color: #1a1a1a !important;
 }
 
 .folderroot .dd-content {
-	border-top: 1px solid hsl(0,0%,30%) !important;
+    border-top: 1px solid hsl(0,0%,30%) !important;
 }
 
 img[src='/images/handout.png'] {
-	content: url('https://i.imgur.com/zM79lGs.png')!important;
+    content: url('https://i.imgur.com/zM79lGs.png')!important;
 }
 
 img[src='/images/character.png'] {
-	content: url('https://i.imgur.com/nZ5EHJd.png')!important;
+    content: url('https://i.imgur.com/nZ5EHJd.png')!important;
 }
 
 .dd-item .playerdots {
@@ -1070,11 +1105,11 @@ anm-edit__gui-row .flex-v-center div button {
 }
 
 .artr__side__tag[data-state="1"] {
-	background-image: linear-gradient(#2a2a2a, #337ab7) !important;
+    background-image: linear-gradient(#2a2a2a, #337ab7) !important;
 }
 
 .artr__side__tag[data-state="2"] {
-	background-image: linear-gradient(#2a2a2a, #8a1a1b) !important;
+    background-image: linear-gradient(#2a2a2a, #8a1a1b) !important;
 }
 
 .artr__main .artr__view_inner,
@@ -1394,7 +1429,7 @@ div.sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-subcontainer 
 }
 
 div.sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-core .sheet-col2 {
-	background: url("https://gistcdn.githack.com/RedReign/70800980c89d9a8ed2029f0136ae75f0/raw/a608c0a7f952138d35717dea053529d800f2201d/vitals.svg") !important;
+    background: url("https://gistcdn.githack.com/RedReign/70800980c89d9a8ed2029f0136ae75f0/raw/a608c0a7f952138d35717dea053529d800f2201d/vitals.svg") !important;
 }
 
 div.sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-attributes-container {
@@ -1512,7 +1547,7 @@ div.sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet
 
 div.sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-core > div.sheet-header,
 div.sheet-licensecontainer .sheet-container:not(.sheet-npc) div.sheet-page.sheet-options > div.sheet-header {
-	background-image: url("https://gistcdn.githack.com/RedReign/e7758f7513b818ff9427a886cffc7fed/raw/45fcf8ecb0705f3352e966ed868fd57ff7c57232/OGLcharScroll.svg") !important;
+    background-image: url("https://gistcdn.githack.com/RedReign/e7758f7513b818ff9427a886cffc7fed/raw/45fcf8ecb0705f3352e966ed868fd57ff7c57232/OGLcharScroll.svg") !important;
 }
 
 div.sheet-licensecontainer .sheet-body .sheet-item .sheet-subitem > span {
@@ -1539,7 +1574,7 @@ div.sheet-licensecontainer .sheet-container:not(.sheet-npc) .sheet-ac-init-speed
 div.sheet-licensecontainer .sheet-body .sheet-spell .sheet-options .sheet-row > span[data-i18n*="spell-component-"],
 div.sheet-licensecontainer .sheet-body .sheet-spell .sheet-options .sheet-row > span[data-i18n*="ritual-u"],
 div.sheet-licensecontainer .sheet-body .sheet-spell .sheet-options .sheet-row > span[data-i18n*="concentration-u"] {
-	background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 div.sheet-licensecontainer .sheet-display button:hover,
@@ -1643,7 +1678,7 @@ div.sheet-licensecontainer .sheet-npc_options span {
 .charsheet .sheet-coin,
 .charsheet div.sheet-globaldisplay,
 .charsheet .sheet-pc .sheet-global-mod .sheet-options-flag:not(:checked) ~ .sheet-display .sheet-subheader {
-	background-color: #2a2a2a !important;
+    background-color: #2a2a2a !important;
 }
 
 .charsheet .sheet-display > button .sheet-spellname[name='attr_spellname'] {
@@ -1680,7 +1715,8 @@ div.sheet-licensecontainer .sheet-npc_options span {
     background-color: #666 !important;
 }
 
-div.sheet-rolltemplate-simple div.sheet-container {
+div.sheet-rolltemplate-simple div.sheet-container,
+div.sheet-rolltemplate-skill div.sheet-container {
     background-image: url("https://i.imgur.com/FjwWl2K.png") !important;
     background-color: transparent !important;
 }
@@ -1802,25 +1838,60 @@ div.sheet-rolltemplate-desc div.sheet-desc.sheet-info .sheet-bottom {
 }
 
 .r20es-clickable-text.selected {
-	background-color: hsl(0,0%,20%) !important;
+    background-color: hsl(0,0%,20%) !important;
 }
 
 .r20es-welcome {
     background-color: hsl(0,0%,10%) !important;
     color: hsl(0,0%,75%) !important;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #525252;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4c4c4c;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #404040;
+}
+
+::-webkit-scrollbar-track {
+    background: #272727;
+    border: 0px dashed #ffffff;
+    border-radius: 22px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 `;
 if (typeof GM_addStyle != "undefined") {
-	GM_addStyle(css);
+    GM_addStyle(css);
 } else if (typeof PRO_addStyle != "undefined") {
-	PRO_addStyle(css);
+    PRO_addStyle(css);
 } else if (typeof addStyle != "undefined") {
-	addStyle(css);
+    addStyle(css);
 } else {
 
     const node = document.createElement("style");
-	node.type = "text/css";
-	node.innerHTML = css;
+    node.type = "text/css";
+    node.innerHTML = css;
 
     // Note(stormy): wait for document.head to be available
     const interval = 10;
