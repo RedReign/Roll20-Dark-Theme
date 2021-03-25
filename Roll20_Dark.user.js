@@ -6,7 +6,7 @@
 // @include       https://app.roll20.net/editor*
 // @include       https://app.roll20.net/campaigns/chatarchive*
 // @run-at        document-start
-// @version       2019.8.07.1
+// @version       2021.3.25.1
 // @license       GPL-3.0-or-later
 // ==/UserScript==
 (function() {var css =`
@@ -24,7 +24,7 @@
 }
 
 body {
-    background:url(http://subtlepatterns.com/patterns/dark_leather.png)!important;
+    background:url(https://www.toptal.com/designers/subtlepatterns/patterns/dark_leather.png)!important;
 }
 
 #floatingtoolbar, #floatinglayerbar {
